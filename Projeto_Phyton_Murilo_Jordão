@@ -1,0 +1,200 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "cd8e325b-3d13-46b5-b882-eed814df30d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def consultoria_musculacao():\n",
+    "    print(\"Bem-vindo à melhor consultoria de musculação de Murilo barros!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "637bef5e-81da-45be-950e-2da559270194",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def dados_paciente():\n",
+    "    nome = str(input(\"Digite seu nome: \"))\n",
+    "    idade = int(input(\"Digite sua idade: \"))\n",
+    "    peso = int(input(\"Digite seu peso: \"))\n",
+    "    altura = float(input(\"Digite sua altura : \"))\n",
+    "    return nome, idade, peso, altura"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "501871a9-d0b9-4add-bef7-dc73c8091a7a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def objetivo():\n",
+    "    print(\"Escolha seu objetivo de treinamento: \\n \")\n",
+    "    print(\"1. Emagrecimento\")\n",
+    "    print(\"2. Ganho de Massa Muscular\")\n",
+    "    print(\"3. Definição Muscular\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ba54d984-bee9-46d2-a0fc-74f412db671d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "91d949b1-f9f2-492f-a658-d2e1f70f0986",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite o número do seu objetivo:  1\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Opção inválida. Tente novamente.\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite o número do seu objetivo:  3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Opção inválida. Tente novamente.\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Digite o número do seu objetivo:  2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Opção inválida. Tente novamente.\n"
+     ]
+    }
+   ],
+   "source": [
+    " while True:\n",
+    "        objetivo = input(\"Digite o número do seu objetivo: \")\n",
+    "        if objetivo == ('1', '2', '3'):\n",
+    "            print(objetivo)\n",
+    "        else:\n",
+    "            print(\"Opção inválida. Tente novamente.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "62e5f949-2bd2-4537-b50b-45a33a767199",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def recomendar_exercicios(objetivo):\n",
+    "    \n",
+    "    if objetivo == 1:\n",
+    "        return {\n",
+    "            \"Corrida\", \"Treinamento Funcional\"\n",
+    "        }\n",
+    "    elif objetivo == 2:\n",
+    "        return {\n",
+    "            \"Musculação\", \"Treinamento de Força\", \"Hipertrofia\"\n",
+    "        }\n",
+    "    elif objetivo == 3:\n",
+    "        return {\n",
+    "            \"Musculação com alto volume\", \"Treinamento de Força\", \"faça cardio\"\n",
+    "        }"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "40e61cc3-7359-43f9-9002-5ae70a4c4562",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Deseja realizar outra consulta? (s/n):  n\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Obrigado por utilizar a Consultoria de Musculação!\n"
+     ]
+    }
+   ],
+   "source": [
+    "while True:\n",
+    "   \n",
+    "    continuar = input(\"Deseja realizar outra consulta? (s/n): \")\n",
+    "    if continuar != 'n':\n",
+    "        print(\"Obrigado por utilizar a melhor consultoria de Musculação!\")\n",
+    "        break"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "08a4272c-178b-41ce-9778-de8b8df956a2",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "92c4b336-2574-4303-9773-037c9a7208fc",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
